@@ -7,7 +7,7 @@ import { ResidenceService } from './shared/residence.service';
 	selector: 'residence',
 	moduleId: module.id,
 	templateUrl: 'residence.component.html',
-	providers: [ResidenceService]
+	styleUrls: ['residence.component.css']
 })
 
 export class ResidenceComponent implements OnInit {
@@ -16,8 +16,8 @@ export class ResidenceComponent implements OnInit {
 	constructor(private residenceService: ResidenceService) { }
 
 	ngOnInit() {
-		this.residenceService.getList().subscribe((res) => {
-			this.residence = res;
-		});
+		// this.residenceService.getList().subscribe((res) => {
+		// 	this.residence = res;
+		// });
 	}
 }
