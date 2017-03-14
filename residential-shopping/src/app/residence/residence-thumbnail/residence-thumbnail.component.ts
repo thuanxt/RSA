@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Residence } from '../shared/residence.model';
 
 @Component({
 	selector: 'residence-thumbnail',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ResidenceThumbnailComponent implements OnInit {
+	@Input() residence : Residence;
 
 	constructor() { }
 
