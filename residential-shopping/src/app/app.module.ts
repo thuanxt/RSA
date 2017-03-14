@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
     NgbModule.forRoot(),
     ResidenceModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
   providers: [],
   bootstrap: [AppComponent]
