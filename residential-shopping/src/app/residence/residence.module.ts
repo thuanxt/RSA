@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ResidenceRoutingModule } from './residence-routing.module';
 
+// Import Component
 import { ResidenceComponent } from './residence.component';
+import { ResidenceThumbnailComponent } from './residence-thumbnail/residence-thumbnail.component';
+import { ResidenceListComponent } from './residence-list/residence-list.component';
 
 import { ResidenceService } from './shared/residence.service';
 
 @NgModule({
     imports: [
-        BrowserModule,
+        CommonModule,
         FormsModule,
         HttpModule,
         NgbModule,
@@ -20,7 +23,9 @@ import { ResidenceService } from './shared/residence.service';
     ],
     exports: [],
     declarations: [
-        ResidenceComponent
+        ResidenceComponent,
+        ResidenceThumbnailComponent,
+        ResidenceListComponent
     ],
     providers: [
         ResidenceService

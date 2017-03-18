@@ -11,6 +11,6 @@ export class ResidenceService {
 	constructor(private http: Http) { }
 
 	getList(): Observable<Residence[]> {
-		return this.http.get('/api/list').map(res => res.json() as Residence[]);
+		return this.http.get('/api/residence').map(res => res.json().data as Residence[]);
 	}
 }

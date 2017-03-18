@@ -3,7 +3,13 @@ import { InMemoryDbService } from 'angular2-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     let residence = [
-      {id: 11, name: 'The Park Residence'},
+      {
+        id: 11,
+        name: 'The Park Residence', 
+        address: 'Nha Be',
+        description: 'Nha Be',
+        imageUrl: '#'
+      },
       {id: 12, name: 'Park Vista'},
       {id: 13, name: 'Sunrise City'},
       {id: 14, name: 'Sun River Side'},
