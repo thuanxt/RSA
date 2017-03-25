@@ -2,15 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserComponent } from './user.component';
-
+import { UserLoginComponent } from './user-login/user-login.component';
 
 const routes: Routes = [
     { 
-        path: 'user',
+        path: '',
         component: UserComponent ,
         children: [
             {
-                // path: '',
+                path: '',
+                component: UserLoginComponent,
             }
         ]
     },

@@ -4,10 +4,9 @@ import { User } from './shared/user.model';
 import { UserService } from './shared/user.service';
 
 @Component({
-	selector: 'user',
 	moduleId: module.id,
-	templateUrl: 'user.component.html',
-	providers: [UserService]
+	templateUrl: './user.component.html',
+	styleUrls: ['./user.component.css']
 })
 
 export class UserComponent implements OnInit {
@@ -16,8 +15,8 @@ export class UserComponent implements OnInit {
 	constructor(private userService: UserService) { }
 
 	ngOnInit() {
-		this.userService.getList().subscribe((res) => {
-			this.user = res;
-		});
+		// this.userService.getList().subscribe((res) => {
+		// 	this.user = res;
+		// });
 	}
 }

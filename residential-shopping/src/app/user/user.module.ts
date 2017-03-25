@@ -8,6 +8,7 @@ import { UserRoutingModule } from './user-routing.module';
 
 // Import Component
 import { UserComponent } from './user.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 // Import Service
 import { UserService } from './shared/user.service';
@@ -20,9 +21,10 @@ import { UserService } from './shared/user.service';
     exports: [],
     declarations: [
         UserComponent,
+        UserLoginComponent
     ],
     providers: [
         UserService
     ],
 })
-export class ResidenceModule { }
+export class UserModule { }

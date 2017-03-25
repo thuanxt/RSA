@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // import feature module
 import { ResidenceModule } from './residence/residence.module';
+import { UserModule } from './user/user.module';
 
 // import component
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     CoreModule,
     ResidenceModule,
+    UserModule,
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
